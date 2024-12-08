@@ -3,10 +3,6 @@ const fs = require('fs');
 const htmlContent = fs.readFileSync('Day 1/index.html', 'utf-8');
 const pairs = htmlContent.match(/\d+\s+\d+/g);
 
-if (!pairs) {
-  process.exit(1);
-}
-
 const leftList = [];
 const rightList = [];
 
