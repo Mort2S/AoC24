@@ -38,11 +38,6 @@ function calculateMulResultsWithConditionals(input) {
 }
 
 fs.readFile('Day 3/text.txt', 'utf8', (err, data) => {
-    if (err) {
-        console.error("Error reading the file:", err);
-        return;
-    }
-
     const resultPartOne = calculateMulResults(data);
     const resultPartTwo = calculateMulResultsWithConditionals(data);
 
